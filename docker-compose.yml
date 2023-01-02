@@ -1,0 +1,18 @@
+version: "3.7"
+
+services:
+  ingress:
+    image: "ingress"
+    restart: unless-stopped
+    volumes:
+      - /etc/letsencrypt/:/etc/letsencrypt/
+    ports:
+      - 80:80
+      - 443:443
+      - 3000:3000
+    networks:
+      - minesweeper
+
+networks:
+  minesweeper:
+    name: minesweeper-network
