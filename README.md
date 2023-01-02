@@ -1,1 +1,1 @@
-# digitalocean-sgp1-game
+# sgp1-game
