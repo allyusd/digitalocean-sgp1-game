@@ -15,6 +15,7 @@ jobs:
     needs: build
     uses: allyusd/workflows/.github/workflows/docker-compose.yml@main
     with:
+      namespace: allyusd
       projectName: sgp1-game
     secrets:
       host: ${{ secrets.SSH_HOST }}
