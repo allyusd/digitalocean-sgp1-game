@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   ingress:
-    image: "ghcr.io/allyusd/sgp1-game/ingress:latest"
+    image: "ghcr.io/allyusd/sgp1-game/ingress:main"
     restart: unless-stopped
     volumes:
       - /etc/letsencrypt/:/etc/letsencrypt/
